@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAF1F9FF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6966CC"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/back"
+                android:onClick="back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="量表详情"
+                android:textColor="#ffffff"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:background="#221F99"
+            android:padding="0.5dp">
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="姓名："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="张三"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="性别："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/xb"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="年龄："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/nl"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="受教育年限："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/sjynx"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="身高："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/sg"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="体重："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tz"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="头围："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/touw"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="腰围："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/yw"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="臀围："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tunw"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="收缩压："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/ssy"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="舒张压："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/szy"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="心率："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/xl"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="利手："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/ls"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="职业："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/zy"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="月收入："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/ysr"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="婚姻状况："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/hyzk"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="子女个数："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/zn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="性格："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/xg"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有高血压病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/gxy"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有糖尿病病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tnb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有冠心病病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/gxb"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有高血脂症史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/gxz"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有贫血病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/px"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有脑血管病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/nxg"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有脑外伤病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/nws"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有颅内感染病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/lngr"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有颜面感染病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/ymgr"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有颈椎病病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/jzb"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有忧郁症病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/yyz"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="是否有帕金森病史："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/pjs"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="MMSE-得分："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/mmse_df"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="GDS-得分："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/gds_df"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="ADL-得分："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/adl_df"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="NPI-得分："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/npi_df"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="VFT-得分："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/vft_df"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:background="#221F99"
+                android:padding="0.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text1"
+                    android:gravity="right|center_vertical"
+                    android:text="CDR-得分："
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/cdr_df"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text2"
+                    android:gravity="center_vertical"
+                    android:hint="男"
+                    android:textColor="#929292"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp" />
+
+        </TableLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

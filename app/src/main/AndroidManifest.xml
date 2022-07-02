@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yiapp">
+
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/loge1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"/>
+
+        <activity android:name=".RegisterActivity" />
+
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".base.BaseActivity" />
+
+        <activity android:name=".mine.UserAboutActivity" />
+        <activity android:name=".mine.UserAddressActivity" />
+        <activity android:name=".mine.ChangePswActivity" />
+        <activity android:name=".mine.AppAboutActivity" />
+        <activity android:name=".mine.AddAddressActivity" />
+        <activity android:name=".mine.AddServiceActivity" />
+        <activity android:name=".mine.AdminServiceActivity" />
+
+        <activity android:name=".need.AddNeedActivity" />
+        <activity android:name=".need.NeedDetailActivity" />
+        <activity android:name=".need.NeedDetail1Activity" />
+        <activity android:name=".need.ServiceGiveActivity" />
+
+        <activity android:name=".service.ServiceDetailActivity" />
+        <activity android:name=".service.ServiceEvaluateActivity" />
+        <activity android:name=".service.ServiceEvaluate1Activity" />
+
+        <activity android:name=".gauge.AddGaugeActivity" />
+        <activity android:name=".gauge.GaugeDetailActivity" />
+
+    </application>
+
+</manifest>

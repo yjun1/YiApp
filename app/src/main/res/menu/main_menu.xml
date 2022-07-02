@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gauge"
+        android:title="@string/buttom_title_gauge"
+        android:icon="@drawable/gauge"/>
+
+    <item
+        android:id="@+id/need"
+        android:title="@string/buttom_title_need"
+        android:icon="@drawable/need"/>
+
+    <item
+        android:id="@+id/service"
+        android:title="@string/buttom_title_service"
+        android:icon="@drawable/service"/>
+
+    <item
+        android:id="@+id/mine"
+        android:title="@string/buttom_title_mine"
+        android:icon="@drawable/mine"/>
+
+</menu>
